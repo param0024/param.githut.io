@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+	/*background-color: crimson;*/
+	position: fixed;
+	width: 100%;
+	padding: 30px 0px;
+	z-index: 1000;
+	transition: .3s all ease;
+}
+.navbar.sticky{
+	background-color: crimson;
+	padding: 15px 0px;
+}
+.navbar .max-width{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*padding: 0px 65px;*/
+	width: 90%;
+	margin: auto;
+}
+.navbar .logo a{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+}
+.navbar .menu {
+      display: inline-flex;
+}
+
+.navbar .menu li{
+	list-style: none;
+}
+.navbar .menu li a{
+	color: #fff;
+	margin-left: 45px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.icon{
+	color: #fff;
+	font-size: 20px;
+	display: none;
+}
+
+.cross-bars{
+	position: absolute;
+	top: 25px;
+	right: 65px;
+}
+
+.home{
+	background: url("images/banner.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    /* display: flex; */
+    color: #fff;
+}
+.home .home-content{
+	z-index: 5;
+	position: absolute;
+	top: 30%;
+	left: 5%;
+	font-family: 'Ubuntu' sans-serif;
+}
+
+.home .home-content .text-1{
+	font-size: 27px;
+	font-weight: 500
+}
+
+.home .home-content .text-2{
+	font-size: 72px;
+	font-weight: 550;
+	margin: 7px 0px;
+}
+.home .home-content .text-3{
+	font-size: 40px;
+	font-weight: 500;
+	margin: 3px 0px;
+}
+.home .home-content .text-3 span{
+	color: crimson;
+}
+.btn1{
+	color: crimson;
+   background: transparent;
+   border: 2px solid crimson;
+   
+	outline: none;
+	cursor: pointer;
+	padding: 14px 38px;
+	
+	font-size: 22px;
+	font-weight: 450;
+	border-radius: 10px;
+	margin: 20px 0px;
+	transition: .3s all ease;
+}
+.btn1:hover{
+   color: #fff;
+	background-color: crimson;
+}
+.upbtn{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    background-color: crimson;
+    bottom: 10px;
+    right: 50px;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transition: 0.3s all ease;
+}
+.upbtn.show{
+	bottom: 35px;
+	opacity: 1;
+    pointer-events: auto;
+}
+
+     /*about*/
+
+.about{
+	width: 90%;
+	margin: auto;
+	padding: 100px 0px;
+}
+.about .about-title{
+	margin-bottom: 70px;
+	position: relative;
+}
+.about .title::before{
+	content: "";
+	width: 195px;
+	height: 3px;
+	position: absolute;
+	background-color: crimson;
+	top: 100%;
+}
+.about-title{
+	text-align: center;
+}
+.about-title .title{
+	font-size: 40px;
+	font-weight: 400;
+}
+.about-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+}
+.about-content .right{
+	width: 45%;
+}
+.about-content .left img{
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #777;
+}
+.about-content .right{
+	width: 55%;
+	text-align: justify;
+}
+	    
+.about-content .right .text{
+	font-size: 28px;
+	font-weight: 550;
+	margin-bottom: 15px;
+}
+.about-content .right .text span{
+	color: crimson;
+}
+.about-content .right p{
+	color: #777;
+	font-size:16px;
+	font-weight: 400;
+	text-align: justify;
+}
+.cvbtn{
+	background-color: crimson;
+	color: #fff;
+	padding: 12px 30px;
+	border: 2px solid crimson;
+	border-radius: 6px;
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: 10px;
+	display: inline-block;
+	transition: .3s all linear;
+}
+.cvbtn:hover{
+	background: transparent;
+	color: crimson;
+}
+
+    /*skills*/
+
+.skill-background{
+	background-color: #f0f8ff;
+	/*width: 100%;*/
+	height: auto;
+}
+.skills{
+	width: 90%;
+	margin: auto;
+	padding: 100px 0px;
+}
+.skills .skills-title{
+    text-align: center;
+    margin-bottom: 70px;
+	position: relative;
+}
+.skills-title .title-2 {
+     font-size: 40px;
+	font-weight: 400;
+	color: black;
+}
+.skills-title .title-2::before{
+	content: "";
+	width: 160px;
+	height: 3px;
+	position: absolute;
+	background-color: crimson;
+	top: 100%;
+}
+.row-1{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.row-1 .skill-col{
+	width: calc(100% / 3 - 20px);
+	height: 200px;
+	margin: 15px 0px;
+	color: black;
+	background-color: #fff;
+	box-sizing: border-box;
+	padding: 20px 20px;
+	border-radius: 10px;
+	cursor: default;
+	box-shadow: 0px 8px 18px rgba(0,0,0,0.20);
+}
+.skill-col:hover{
+	background-color: crimson;
+	color: #fff;
+	transition: all .4s linear;
+}
+.skill-col h2{
+	text-align: center;
+	padding-bottom: 5px;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+     /*contact*/
+
+.contact{
+	width: 90%;
+	margin: auto;
+	padding: 100px 0px;
+}
+.contact .contact-title{
+	text-align: center;
+	margin-bottom: 70px;
+	position: relative;
+}
+.contact .title::before{
+	content: "";
+	width: 240px;
+    height: 3px;
+    background-color: crimson;
+    position: absolute;
+    top: 100%;
+}
+ .title{
+     font-size: 40px;
+	font-weight: 400;
+}
+.contact .contact-content{
+	display: flex; justify-content: space-between;
+}
+.contact .contact-content .column {
+    width: calc(50% - 20px);
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+/*.contact-content .icons .row{
+	color: crimson;
+}*/
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.info .head{
+    font-weight: 500;
+}
+.contact .contact-content .left .text{
+	font-size: 20px;
+	font-weight: 500;
+	padding-bottom: 25px;
+}
+.contact .contact-content .right .text{
+	font-size: 20px;
+	font-weight: 500;
+	padding-bottom: 25px;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area{
+	justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+ 
+.right form .button-area button{
+  color: #fff;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  background: crimson;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.button-area .contact-list a{
+	color: black;
+}
+
+.right form .button-area button:hover{
+  color: crimson;
+  background: none;
+}
+
+    /*footer*/
+
+footer{
+	background-color: black;
+	width: 100%;
+	text-align: center;
+	padding: 15px 0px;
+}
+footer span{
+	color: #fff;
+}
+footer span a{
+	color: crimson;
+}
+footer .fa-facebook{
+	color: #fff;
+    margin: 0px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #2980b9;
+    outline: none;
+    text-decoration: none;
+}
+
+/*media query*/
+/*@media (max-width: 1250px){
+	.navbar .max-width{
+	padding: 0px 53px;
+}*/
+@media (max-width: 1050px){
+	.navbar .menu {
+		position: fixed;
+		top: 0;
+		left: -100%;
+		background-color: black;
+		height: 100vh;
+		width: 100%;
+		/*max-width: 1000px;*/
+		display: block;
+		text-align: center;
+		padding: 60px 0px;
+        transition: 0.3s all ease;
+      }
+     .cross-bars{
+	top: 26px;
+	right: 55px;
+}
+	.about .about-content{
+  	flex-direction: column;
+  }
+  .about-content .right{
+  	padding-top: 50px;
+  margin-left: 2px;
+  width: 100%;
+  }
+ .row-1 .skill-col{
+	width: calc(100% / 2 - 20px);
+	text-align: center;
+}
+.contact .contact-content{
+	flex-direction: column;
+	width: 100%;
+}
+.contact .contact-content .left{
+	width: 100%;
+}
+.contact .contact-content .right{
+	width: 100%;
+	margin-top: 20px;
+}
+	.navbar .menu.show{
+	left: 0%;
+}
+.menu li{
+    margin: 35px 0px;
+}
+ .icon{
+   display: block;
+   cursor: pointer;
+}
+  .home .home-content .text-1{
+     margin-left: 3px;
+}
+  .about-content .left{
+  	width: 100%;
+  	text-align: center;
+  }
+ .about-content .right .text{
+	font-size: 28px;
+	font-weight: 550;
+	margin-bottom: 15px;
+}
+}
+@media (max-width: 1100px){
+	.about-content .left img{
+	width: 380px;
+	height: 380px;
+	object-fit: cover;
+}
+}
+@media (max-width: 792px){
+	.home .home-content .text-2{
+  	font-size: 60px;
+  }
+  .home .home-content .text-3{
+  	font-size: 30px;
+  }
+   .home .home-content{
+  	margin-left: 5px;
+  }
+  .cross-bars{
+	right: 40px;
+}
+}
+@media (max-width: 602px){
+.navbar .max-width .logo{
+		width: 100%;
+		text-align: center;
+	}
+.row-1 .skill-col{
+	width: calc(100% / 1 - 0px);
+}
+}
+@media (max-width: 650px){
+  	.home .home-content .text-1{
+  		font-size: 20px;
+  	}
+	.home .home-content .text-2{
+  	font-size: 50px;
+  }
+  .home .home-content .text-3{
+  	font-size: 25px;
+  }
+   /*.home .home-content{
+  	margin-left: 5px;
+  }*/
+  .btn1{   
+	padding: 12px 35px;
+	font-size: 20px;
+	font-weight: 450;
+}
+.cross-bars{
+	right: 35px;
+}
+}
+@media (max-width: 575px){
+   .upbtn{
+    width: 35px;
+    height: 35px;
+    bottom: 10px;
+    right: 25px;
+    line-height: 35px;
+}
+}
+@media (max-width: 530px){
+   .about-content .right .text{
+	font-size: 23px;
+	font-weight: 550;
+}
+.home .home-content .text-2{
+  	font-size: 40px;
+  }
+}
+@media (max-width: 480px){
+	.home .home-content .text-1{
+  	font-size: 20px;
+  }
+  .home .home-content .text-3{
+  	font-size: 20px;
+  }
+}
+@media (max-width: 420px){
+	.home .home-content .text-2{
+  	font-size: 30px;
+  }
+}
+@media (max-width: 450px){
+    .about-content .right .text{
+     font-size: 20px;
+     font-weight: 550;
+ }
+ .about-content .left img{
+     width: 300px;
+     height: 300px;
+ }
+ .about-content .right p{
+     font-size:14px;
+     font-weight: 400;
+ }
+ .cvbtn{
+     padding: 10px 25px;
+     font-size: 15px;
+     font-weight: 400;
+ }
+ .contact .contact-content .row .info{
+     margin-left: 20px;
+ }
+ }
+ @media (max-width: 365px){
+     .about-content .right .text{
+     font-size: 18px;
+     font-weight: 550;
+ }
+ .about-content .left img{
+     width: 280px;
+     height: 280px;
+ }
+ }
+ 
